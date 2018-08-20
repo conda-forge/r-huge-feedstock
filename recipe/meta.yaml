@@ -1,7 +1,7 @@
 {% set version = '1.2.7' %}
+
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
-{% set cran_mirror = 'https://cran.r-project.org' %}
 
 package:
   name: r-huge
@@ -15,8 +15,8 @@ source:
   sha256: 042b771c334cf4d1a92c5c546ca025238919f772a50457594b7e0bd243498d8c
 
 build:
-  number: 0
-  skip: true  # [win]
+  merge_build_host: True  # [win]
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -27,6 +27,10 @@ requirements:
     - {{native}}toolchain        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}make
+    - {{posix}}sed               # [win]
+    - {{posix}}coreutils         # [win]
+    - {{posix}}zip               # [win]
+
   host:
     - r-base
     - r-mass
@@ -74,3 +78,4 @@ extra:
     - daler
     - jdblischak
     - cbrueffer
+    - dbast
