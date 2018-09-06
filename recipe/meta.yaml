@@ -16,7 +16,8 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
+
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,6 +38,7 @@ requirements:
     - r-matrix
     - r-igraph
     - r-lattice
+
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
