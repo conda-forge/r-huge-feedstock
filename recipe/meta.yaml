@@ -1,4 +1,4 @@
-{% set version = '1.3.0' %}
+{% set version = "1.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/huge_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/huge/huge_{{ version }}.tar.gz
-  sha256: 9095151b4fc57f93dc5b120e2e7f51e46938756fc917c6201a5d599fd5c9faa2
+  sha256: 0d4b683c50fb99ee0ef7c3551ac7cca4e828eacd10372853a3037b19e27e23c9
 
 build:
   merge_build_host: True  # [win]
