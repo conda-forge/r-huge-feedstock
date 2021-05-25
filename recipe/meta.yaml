@@ -58,7 +58,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=huge
-  license: GPL-2
+  license: GPL-2.0-only
   summary: 'Provides a general framework for high-dimensional undirected graph estimation. It integrates data preprocessing, neighborhood screening, graph estimation,
     and model selection techniques into a pipeline. In preprocessing stage, the nonparanormal(npn) transformation is applied to help relax the normality assumption.
     In the graph estimation stage, the graph structure is estimated by Meinshausen-Buhlmann graph estimation or the graphical lasso, and both methods can be further
