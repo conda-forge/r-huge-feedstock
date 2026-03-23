@@ -1,15 +1,15 @@
-{% set version = "1.4" %}
+{% set version = "1.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-huge
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/huge_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/huge/huge_{{ version }}.tar.gz
-  sha256: 53f526d85ef43a22be7fb4092ec31bb77c6d630eb4acba8f62ed14a62f1fbf63
+  sha256: 21d077c925c9c05a19e0cb0dcffad16f7557c1fe55ffbea82773fd4b73e05416
 
 build:
   number: 0
