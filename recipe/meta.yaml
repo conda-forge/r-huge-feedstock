@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/huge_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/huge/huge_{{ version }}.tar.gz
-  sha256: c5987c535b27d2678cdfab10014404cf860fef393ad433ba10f16bec0aaaa725
+  sha256: ca525f3d306a98520962d36d64d2dc3c08f7c1b387d44a2938a88c80ec76f133
 
 build:
   number: 0
